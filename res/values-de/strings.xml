@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BluetoothKeepalive</string>
-    <string name="StartingService">BluetoothKeepalive Dienst wird gestartet</string>
-    <string name="BtDisconn">BluetoothKeepalive hat eine BT-Trennung erkannt</string>
-    <string name="GotWakeLock">BluetoothKeepalive hält ein Wakelock</string>
-    <string name="Idle">BTKA wartet auf eine Verbindung</string>
-    <string name="TickerText">BTKA hat Wakelock</string>
-    <string name="TickerTextIdle">BTKA wartet auf eine Verbindung</string>
-    <string name="RecogConnect">BluetoothKeepalive hat eine Verbindung festgestellt</string>
+    <string name="app_name">ChargingKeepalive</string>
+    <string name="StartingService">ChargingKeepalive Dienst wird gestartet</string>
+    <string name="BtDisconn">ChargingKeepalive hat ein Ladegerät erkannt</string>
+    <string name="GotWakeLock">ChargingKeepalive hält ein Wakelock</string>
+    <string name="Idle">CHKA wartet auf ein Ladegerät</string>
+    <string name="TickerText">CHKA hat Wakelock</string>
+    <string name="TickerTextIdle">CHKA wartet auf Ladegerät</string>
+    <string name="RecogConnect">ChargingKeepalive hat ein Ladegerät festgestellt</string>
     <string name="ButtonConfig">Konfiguration&#8230;</string>
     <string name="ButtonStart">Service starten</string>
     <string name="ButtonStop">Service beenden</string>
     <string name="ConfigNotifications">Benachrichtigungen</string>
     <string name="ConfigToastSummary">Zeige kurze Popup-Info bei jeder Änderung des Status</string>
     <string name="ConfigToastTitle">Nachrichten anzeigen</string>
-    <string name="ConfigIdleSummary">Zeige ein Icon in der Statusleiste, auch wenn keine Verbindung besteht (stabiler)</string>
+    <string name="ConfigIdleSummary">Zeige ein Icon in der Statusleiste, auch wenn nicht geladen wird (stabiler)</string>
     <string name="ConfigIdleTitle">Zeige Leerlauf-Icon</string>
-    <string name="ConfigConnectedSummary">Zeige ein Icon in der Statusleiste, wenn eine Verbindung besteht (stabiler)</string>
-    <string name="ConfigConnectedTitle">Zeige Connection-Icon</string>
+    <string name="ConfigConnectedSummary">Zeige ein Icon in der Statusleiste, wenn geladen wird (stabiler)</string>
+    <string name="ConfigConnectedTitle">Zeige Lade-Icon</string>
     <string name="ConfigBehaviour">Verhalten</string>
     <string name="ConfigAutorunSummary">Wenn die App startet, wird der Service gestartet und die App automatisch geschlossen.</string>
     <string name="ConfigAutorunTitle">Autorun Serv. on App</string>

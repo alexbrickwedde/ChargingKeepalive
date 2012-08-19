@@ -15,7 +15,7 @@ public class StaticHelper {
 		boolean bAutoexec = prefs.getBoolean("autoexec", true);
 		if (bAutoexec) {
 			Intent serviceIntent = new Intent();
-			serviceIntent.setAction("org.floodping.chargingkeepalive.BluetoothKeepaliveService");
+			serviceIntent.setAction("org.floodping.chargingkeepalive.ChargingKeepaliveService");
 			context.startService(serviceIntent);
 		}
 	}
@@ -26,7 +26,7 @@ public class StaticHelper {
 		boolean bAutoexec = prefs.getBoolean("autorun", true);
 		if (bAutoexec) {
 			Intent serviceIntent = new Intent();
-			serviceIntent.setAction("org.floodping.chargingkeepalive.BluetoothKeepaliveService");
+			serviceIntent.setAction("org.floodping.chargingkeepalive.ChargingKeepaliveService");
 			context.startService(serviceIntent);
 		}
 	}

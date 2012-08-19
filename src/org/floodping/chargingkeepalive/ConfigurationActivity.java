@@ -16,10 +16,10 @@ public class ConfigurationActivity extends PreferenceActivity {
 	protected void onStop() {
 		super.onStop();
 
-		if (StaticHelper.isMyServiceRunning(this, "org.floodping.chargingkeepalive.BluetoothKeepaliveService"))
+		if (StaticHelper.isMyServiceRunning(this, "org.floodping.chargingkeepalive.ChargingKeepaliveService"))
 		{
 			Intent serviceIntent = new Intent();
-			serviceIntent.setAction("org.floodping.chargingkeepalive.BluetoothKeepaliveService");
+			serviceIntent.setAction("org.floodping.chargingkeepalive.ChargingKeepaliveService");
 //			this.stopService(serviceIntent);
 			this.startService(serviceIntent);
 		}
