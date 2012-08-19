@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.floodping.chargingkeepalive"
+    android:versionCode="16"
+    android:versionName="1.14" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.REBOOT" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name=".BluetoothKeepaliveActivity"
+            android:launchMode="singleTop">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ConfigurationActivity" >
+        </activity>
+        
+		<service android:name=".BluetoothKeepaliveService">
+			<intent-filter>
+			<action android:name="org.floodping.chargingkeepalive.BluetoothKeepaliveService" />
+			</intent-filter>
+		</service>
+        <receiver android:name=".BootIntentReceiver">
+			<intent-filter>
+			<action android:name="android.intent.action.BOOT_COMPLETED" />
+			<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+    </application>
+</manifest>

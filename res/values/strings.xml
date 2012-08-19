@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BluetoothKeepalive</string>
+    <string name="StartingService">BluetoothKeepalive service is being started</string>
+    <string name="BtDisconn">BluetoothKeepalive recognized BT disconnect</string>
+    <string name="GotWakeLock">Wakelock is being held by BluetoothKeepalive Service</string>
+    <string name="Idle">BTKA is waiting for a connection</string>
+    <string name="TickerText">BTKA got Wakelock</string>
+    <string name="TickerTextIdle">BTKA is waiting for a connection</string>
+    <string name="RecogConnect">BluetoothKeepalive recognized connect</string>
+    <string name="ButtonConfig">Configuration&#8230;</string>
+    <string name="ButtonStart">Start Service</string>
+    <string name="ButtonStop">Stop Service</string>
+    <string name="ConfigNotifications">Notification Configuration</string>
+    <string name="ConfigToastSummary">Show short messages on every change</string>
+    <string name="ConfigToastTitle">Show messages</string>
+    <string name="ConfigIdleSummary">Show Icon in notifier when idle (more stable)</string>
+    <string name="ConfigIdleTitle">Show Idle Icon</string>
+    <string name="ConfigConnectedSummary">Show Icon in notifier when connected (more stable)</string>
+    <string name="ConfigConnectedTitle">Show Connected Icon</string>
+    <string name="ConfigBehaviour">Behaviour</string>
+    <string name="ConfigAutorunSummary">When app is started the background-service starts automatically, then the app closes</string>
+    <string name="ConfigAutorunTitle">Autorun Serv. on App</string>
+    <string name="ConfigAutoexecSummary">When Android is started the background-service starts automatically</string>
+    <string name="ConfigAutoexecTitle">Autorun Serv. on Boot</string>
+</resources>

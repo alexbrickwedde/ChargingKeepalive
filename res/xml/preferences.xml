@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="first_category"
+        android:title="@string/ConfigNotifications" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="show_toasts"
+            android:summary="@string/ConfigToastSummary"
+            android:title="@string/ConfigToastTitle" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="notifier_idle"
+            android:summary="@string/ConfigIdleSummary"
+            android:title="@string/ConfigIdleTitle" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notifier_running"
+            android:summary="@string/ConfigConnectedSummary"
+            android:title="@string/ConfigConnectedTitle" />
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:key="second_category"
+        android:title="@string/ConfigBehaviour" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autorun"
+            android:summary="@string/ConfigAutorunSummary"
+            android:title="@string/ConfigAutorunTitle" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoexec"
+            android:summary="@string/ConfigAutoexecSummary"
+            android:title="@string/ConfigAutoexecTitle" />
+        </PreferenceCategory>
+</PreferenceScreen>
